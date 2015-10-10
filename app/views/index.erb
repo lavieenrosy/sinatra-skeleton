@@ -1,1 +1,20 @@
-<h1>Home Page</h1>
+<h1> Post Gallery </h1>
+
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Title </th>
+      <th>Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.title %></td>
+        <td><image src="<%= post.image %>" height="200" width="200" />
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,79 @@
+.welcome {
+  float:right; 
+  height:30px;
+  text-align:right;
+  margin-right:20px;
+}
+
+.nav {
+  background-color: #00c7b7;
+  margin-left:10px;
+  margin-top:40px;
+  margin-right:10px;
+  color: white;
+  border-radius:10px;
+}
+
+.logout {
+  float:right;
+  margin-right:20px;
+}
+
+#login-form {
+  font-family: 'Lora', serif;
+  background-color: #00c7b7;
+  color:white;
+  width:300px;
+  padding:10px;
+}
+#signup-form {
+  font-family: 'Lora', serif;
+  background-color: #e6efee;
+  width:300px;
+  padding:10px;
+
+}
+#login-form h2 {
+  margin:0;
+  text-align: center;
+}
+#signup-form h2 {
+  margin:0;
+  text-align: center;
+  color:#5cb85c;
+}
+#first-name {
+  width: 43%;
+  margin-left: 12px;
+
+}
+#last-name {
+  width: 43%;
+  margin-right: 12px;
+  float:right;
+  border-radius: 0px;
+  
+}
+.input-group {
+  margin: 0 auto;
+}
+#email {
+  margin-left:12px;
+  margin-right:12px;
+  margin-top:-25px;
+  width: 91%;
+  border-radius:0px;
+
+}
+#password {
+  margin-left:12px;
+  margin-right:12px;
+  margin-top:-25px;
+  width: 91%;
+  border-radius:0px;
+
+}
+#submit {
+  display: block;
+  margin: 0 auto;
+}

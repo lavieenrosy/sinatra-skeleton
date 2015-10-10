@@ -9,19 +9,19 @@ class CreateTables < ActiveRecord::Migration
       t.timestamps
     end
 
-    create_table :courses do |t|
+    create_table :posts do |t|
       t.string :title
-      t.string :start_date
-      t.string :end_date
-      t.string :description
-      t.belongs_to :user_id
+      t.references :user
       t.timestamps
     end
 
-    create_table :enrolment do |t|
-      t.belongs_to :user_id
-      t.belongs_to :course_id
-
+    create_table :comments do |t|
+      t.text :comment
+      t.string :byline
+      t.references :post
+      t.references :user
+      t.timestamps
+    end
   end
 
 end

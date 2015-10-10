@@ -1,0 +1,31 @@
+Some form to edit a user's profile
+
+<section id="signup-form"> 
+    <h2>Edit</h2>
+    <br>
+
+    <form method="POST" action="/profile/edit" >
+      <div class="input-group">
+
+        <label for="first_name" ></label>
+        <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" value=" @current_user.first_name %>"/><br>
+
+        <label for="last_name"></label>
+        <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" value=" @current_user.last_name %>"/>/>
+
+      </div>
+      <br>
+
+      <label for="email"></label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Email" value=" @current_user.email %>"/> />
+
+      <br>
+      <label for="password"></label>
+      <input type="password" class="form-control" id="password" name="password" placeholder="Set a password" value=" @current_user.password %>"/>/>
+
+      <br>
+
+      <input class="btn btn-success" type="submit" id="submit" value="Edit" />
+
+    </form>
+  </section>
